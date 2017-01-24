@@ -78,7 +78,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="layouts\system\Social\Sharing\SocialEvents.aspx" />
+    <Page Include="layouts\system\Social\Sharing\SocialEvents.aspx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
