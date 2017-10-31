@@ -52,6 +52,10 @@
       <HintPath>..\packages\SC.Sitecore.Analytics.Core.8.2.1\lib\Sitecore.Analytics.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.Analytics.Model, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.Sitecore.Analytics.Model.8.2.1\lib\Sitecore.Analytics.Model.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\packages\SC.Sitecore.Kernel.8.2.1\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
@@ -85,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Social\Client\Common\Helpers\SharingHelper.cs" />
     <Compile Include="Social\Client\Sharing\SocialEvents.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
