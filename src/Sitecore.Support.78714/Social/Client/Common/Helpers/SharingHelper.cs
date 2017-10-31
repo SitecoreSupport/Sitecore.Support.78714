@@ -41,14 +41,14 @@
                     string.Format(CultureInfo.InvariantCulture,
                         "Start: trigger the '{0}' share button goal for item with ID = {1}.", args), LogLevel.Info,
                     typeof(SharingHelper));
-                if (Tracker.Current.Interaction.PreviousPage != null)
+                if (Tracker.Current.Interaction != null && Tracker.Current.Interaction.PreviousPage != null)
                 {
                     Tracker.Current.Interaction.PreviousPage.Register(pageData);
                 }
                 else
                 {
                     manager.LogMessage(
-                        "Could not trigger a goal: Analytics.Tracker.Current.Interaction.PreviousPage is null",
+                        "Could not trigger a goal: Analytics.Tracker.Current.Interaction or Analytics.Tracker.Current.Interaction.PreviousPage is null",
                         LogLevel.Warn, typeof(SharingHelper));
                 }
                 manager.LogMessage("Finish: trigger share button goal.", LogLevel.Info, typeof(SharingHelper));
