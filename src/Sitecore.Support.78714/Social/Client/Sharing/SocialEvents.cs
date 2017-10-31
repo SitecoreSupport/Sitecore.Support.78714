@@ -31,7 +31,7 @@
         Tracker.Current.CurrentPage.Cancel();
       }
 
-      SharingHelper.TriggerGoal(this.GoalName, this.ItemId, this.DefaultGoalName);
+      Sitecore.Support.Social.Client.Common.Helpers.SharingHelper.TriggerGoal(this.GoalName, this.ItemId, this.DefaultGoalName);
     }
 
     #endregion
