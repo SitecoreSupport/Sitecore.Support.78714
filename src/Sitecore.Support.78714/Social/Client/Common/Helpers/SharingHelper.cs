@@ -33,10 +33,10 @@
                     }
                     goalName = defaultGoalName;
                 }
-                PageEventData data1 = new PageEventData(goalName) {DataKey = itemId};
+                PageEventData data1 = new PageEventData(goalName) { DataKey = itemId };
                 PageEventData pageData = data1;
                 ILogManager manager = ExecutingContext.Current.IoC.Get<ILogManager>(new IParameter[0]);
-                object[] args = new object[] {goalName, itemId};
+                object[] args = new object[] { goalName, itemId };
                 manager.LogMessage(
                     string.Format(CultureInfo.InvariantCulture,
                         "Start: trigger the '{0}' share button goal for item with ID = {1}.", args), LogLevel.Info,
